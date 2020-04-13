@@ -1,0 +1,35 @@
+#main {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 740px;
+    margin: auto;
+    border: solid 1px;
+}
+
+#main::before {
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
+
+#main > *:first-child {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
+
+.test {
+    
+}
+
+.buttons {
+    text-align: center;
+    margin: 10px 0 40px 0;
+}
+
+button {
+    font-size: 20px;
+    margin: 0 20px;
+}
